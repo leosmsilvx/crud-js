@@ -147,6 +147,9 @@ function cadastrar(){
     for(let j = 0; j < cadastros.length; j++){
         uid = parseInt(cadastros[j][0]) + 1;
     }
+    if(uid == undefined){
+        uid = 1;
+    }
     
     uidComZero = ('000' + uid).substr(-3)
     pessoa.push(uidComZero);
