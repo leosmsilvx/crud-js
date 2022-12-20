@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --active-color: #95b806;
+    --danger-color: #ff0022;
+    --bg-color: #151514;
+    --l-bg-color: #272726;
+    --sl-bg-color: #353534;
+    --ssl-bg-color: #555554;
+    --text-color: #d4d4d3;
+    --d-text-color: #a1a1a0;
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.container{
+    padding-top: 25px;
+    margin: auto;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    margin-top: 20px;
+    padding-block: 3px;
+    border: solid 3px var(--sl-bg-color);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: var(--l-bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-title{
+    background-color: var(--l-bg-color);
+    font-size: 20px;
+    padding-inline: 5px;
+    padding-block: 6px;
+}
+
+.options{
+    background-color: var(--sl-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    padding: 8px;
+    
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.no-decoration{
+    text-decoration: none;
+    color: inherit
+}
+
+.option-hover:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.button-option{
+    text-align: center;
+    width: 28px;
+}
+
+.button-option:hover{
+    background-color: var(--ssl-bg-color);
+    color: white;
+    border-radius: 50%;
+}
+
+.itens-list{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 10px;
+}
+
+.table-title{
+    font-weight: 600;
+}
+
+.thead-table{
+    border-bottom: 1px solid var(--text-color);
+}
+
+.item-table{
+    border-spacing: 0;
+    font-size: 13px;
+}
+
+tr:nth-child(odd){
+    background-color: var(--sl-bg-color);
+}
+
+tr:hover{
+    background-color: var(--ssl-bg-color);
+}
+
+tr:first-child:hover{
+    background-color: var(--sl-bg-color);
+}
+
+.button-options{
+    background-color: transparent;
+    border: 0;
+    color: var(--text-color);
+    font-family: Verdana, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.button-options:hover{
+    background-color: var(--ssl-bg-color);
+    border-radius: 4px;
+}
+
+.tr-table{
+    font-size: 13px;
+}
+
+.vizualizar:hover{
+    color: var(--active-color);
+}
+
+.alterar:hover{
+    color: var(--active-color);
+}
+
+.excluir:hover{
+    color: var(--danger-color);
+}
+
+.item-form{
+    font-size: 13px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-input{
+    background-color: var(--ssl-bg-color);
+    border: solid 1px #aaa;
+    color: white;
+    border-radius: 3px;
+    height: 17px;
+    letter-spacing: 0.4px;
+}
+
+.inputs{
+    display: flex;
+    gap: 30px;
+}
+
+.cadastrar:hover{
+    color: var(--active-color);
+}
+
+.item:last-child{
+    border: 0;
+    border-radius: 0;
+    padding: 8px;
+    font-size: 10px;
+    color: var(--d-text-color);
+    text-align: center;
+}
+
+.link:hover{
+    color: var(--active-color);
+}
+
+#item-atualizar{
+    display: none;
+}
+
+#item-vizualizar{
+    display: none;
+}
+
+#item-excluir{
+    display: none;
+}
