@@ -200,3 +200,7 @@ tr:first-child:hover{
 #item-excluir{
     display: none;
 }
+
+.color-active{
+    color: var(--active-color);
+}
